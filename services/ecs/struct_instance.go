@@ -97,6 +97,5 @@ type Instance struct {
 	CpuOptions                      CpuOptions                           `json:"CpuOptions" xml:"CpuOptions"`
 	VpcAttributes                   VpcAttributes                        `json:"VpcAttributes" xml:"VpcAttributes"`
 	NetworkInterfaces               NetworkInterfacesInDescribeInstances `json:"NetworkInterfaces" xml:"NetworkInterfaces"`
-	Tags                            TagsInDescribeInstances              `json:"Tags" xml:"Tags"`
 	OperationLocks                  OperationLocksInDescribeInstances    `json:"OperationLocks" xml:"OperationLocks"`
 }

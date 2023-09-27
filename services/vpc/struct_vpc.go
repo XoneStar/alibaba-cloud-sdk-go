@@ -40,6 +40,5 @@ type Vpc struct {
 	UserCidrs              UserCidrsInDescribeVpcs           `json:"UserCidrs" xml:"UserCidrs"`
 	NatGatewayIds          NatGatewayIds                     `json:"NatGatewayIds" xml:"NatGatewayIds"`
 	RouterTableIds         RouterTableIds                    `json:"RouterTableIds" xml:"RouterTableIds"`
-	Tags                   TagsInDescribeVpcs                `json:"Tags" xml:"Tags"`
 	Ipv6CidrBlocks         Ipv6CidrBlocksInDescribeVpcs      `json:"Ipv6CidrBlocks" xml:"Ipv6CidrBlocks"`
 }

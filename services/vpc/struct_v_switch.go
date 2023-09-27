@@ -17,22 +17,21 @@ package vpc
 
 // VSwitch is a nested struct in vpc response
 type VSwitch struct {
-	VpcId                   string                  `json:"VpcId" xml:"VpcId"`
-	Status                  string                  `json:"Status" xml:"Status"`
-	CreationTime            string                  `json:"CreationTime" xml:"CreationTime"`
-	IsDefault               bool                    `json:"IsDefault" xml:"IsDefault"`
-	AvailableIpAddressCount int64                   `json:"AvailableIpAddressCount" xml:"AvailableIpAddressCount"`
-	NetworkAclId            string                  `json:"NetworkAclId" xml:"NetworkAclId"`
-	OwnerId                 int64                   `json:"OwnerId" xml:"OwnerId"`
-	VSwitchId               string                  `json:"VSwitchId" xml:"VSwitchId"`
-	CidrBlock               string                  `json:"CidrBlock" xml:"CidrBlock"`
-	Description             string                  `json:"Description" xml:"Description"`
-	ResourceGroupId         string                  `json:"ResourceGroupId" xml:"ResourceGroupId"`
-	ZoneId                  string                  `json:"ZoneId" xml:"ZoneId"`
-	Ipv6CidrBlock           string                  `json:"Ipv6CidrBlock" xml:"Ipv6CidrBlock"`
-	VSwitchName             string                  `json:"VSwitchName" xml:"VSwitchName"`
-	ShareType               string                  `json:"ShareType" xml:"ShareType"`
-	EnabledIpv6             bool                    `json:"EnabledIpv6" xml:"EnabledIpv6"`
-	RouteTable              RouteTable              `json:"RouteTable" xml:"RouteTable"`
-	Tags                    TagsInDescribeVSwitches `json:"Tags" xml:"Tags"`
+	VpcId                   string     `json:"VpcId" xml:"VpcId"`
+	Status                  string     `json:"Status" xml:"Status"`
+	CreationTime            string     `json:"CreationTime" xml:"CreationTime"`
+	IsDefault               bool       `json:"IsDefault" xml:"IsDefault"`
+	AvailableIpAddressCount int64      `json:"AvailableIpAddressCount" xml:"AvailableIpAddressCount"`
+	NetworkAclId            string     `json:"NetworkAclId" xml:"NetworkAclId"`
+	OwnerId                 int64      `json:"OwnerId" xml:"OwnerId"`
+	VSwitchId               string     `json:"VSwitchId" xml:"VSwitchId"`
+	CidrBlock               string     `json:"CidrBlock" xml:"CidrBlock"`
+	Description             string     `json:"Description" xml:"Description"`
+	ResourceGroupId         string     `json:"ResourceGroupId" xml:"ResourceGroupId"`
+	ZoneId                  string     `json:"ZoneId" xml:"ZoneId"`
+	Ipv6CidrBlock           string     `json:"Ipv6CidrBlock" xml:"Ipv6CidrBlock"`
+	VSwitchName             string     `json:"VSwitchName" xml:"VSwitchName"`
+	ShareType               string     `json:"ShareType" xml:"ShareType"`
+	EnabledIpv6             bool       `json:"EnabledIpv6" xml:"EnabledIpv6"`
+	RouteTable              RouteTable `json:"RouteTable" xml:"RouteTable"`
 }
