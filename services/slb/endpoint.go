@@ -1,6 +1,9 @@
 package slb
 
+import "sync"
+
 // EndpointMap Endpoint Data
+var once sync.Once
 var EndpointMap map[string]string
 
 // EndpointType regional or central
@@ -8,7 +11,7 @@ var EndpointType = "regional"
 
 // GetEndpointMap Get Endpoint Data Map
 func GetEndpointMap() map[string]string {
-	if EndpointMap == nil {
+	once.Do(func() {
 		EndpointMap = map[string]string{
 			"cn-shanghai-internal-test-1": "slb.aliyuncs.com",
 			"cn-beijing-gov-1":            "slb.aliyuncs.com",
@@ -54,7 +57,7 @@ func GetEndpointMap() map[string]string {
 			"cn-zhangjiakou-na62-a01":     "slb.aliyuncs.com",
 			"cn-hangzhou":                 "slb.aliyuncs.com",
 		}
-	}
+	})
 	return EndpointMap
 }
 
