@@ -17,9 +17,9 @@ package das
 
 // Bandwidth is a nested struct in das response
 type Bandwidth struct {
-	Upgrade                      bool   `json:"Upgrade" xml:"Upgrade"`
-	BandwidthUsageUpperThreshold int    `json:"BandwidthUsageUpperThreshold" xml:"BandwidthUsageUpperThreshold"`
-	ObservationWindowSize        string `json:"ObservationWindowSize" xml:"ObservationWindowSize"`
 	Downgrade                    bool   `json:"Downgrade" xml:"Downgrade"`
+	Upgrade                      bool   `json:"Upgrade" xml:"Upgrade"`
+	ObservationWindowSize        string `json:"ObservationWindowSize" xml:"ObservationWindowSize"`
+	BandwidthUsageUpperThreshold int    `json:"BandwidthUsageUpperThreshold" xml:"BandwidthUsageUpperThreshold"`
 	BandwidthUsageLowerThreshold int    `json:"BandwidthUsageLowerThreshold" xml:"BandwidthUsageLowerThreshold"`
 }

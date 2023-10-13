@@ -17,6 +17,6 @@ package dypnsapi
 
 // TokenInfo is a nested struct in dypnsapi response
 type TokenInfo struct {
-	JwtToken    string `json:"JwtToken" xml:"JwtToken"`
 	AccessToken string `json:"AccessToken" xml:"AccessToken"`
+	JwtToken    string `json:"JwtToken" xml:"JwtToken"`
 }
