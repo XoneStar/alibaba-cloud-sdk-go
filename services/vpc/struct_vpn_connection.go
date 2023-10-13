@@ -43,6 +43,5 @@ type VpnConnection struct {
 	IpsecConfig                IpsecConfig                                        `json:"IpsecConfig" xml:"IpsecConfig"`
 	VcoHealthCheck             VcoHealthCheck                                     `json:"VcoHealthCheck" xml:"VcoHealthCheck"`
 	VpnBgpConfig               VpnBgpConfig                                       `json:"VpnBgpConfig" xml:"VpnBgpConfig"`
-	Tag                        TagInDescribeVpnConnections                        `json:"Tag" xml:"Tag"`
 	TunnelOptionsSpecification TunnelOptionsSpecificationInDescribeVpnConnections `json:"TunnelOptionsSpecification" xml:"TunnelOptionsSpecification"`
 }

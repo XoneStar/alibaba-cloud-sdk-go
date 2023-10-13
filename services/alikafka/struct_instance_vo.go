@@ -50,5 +50,4 @@ type InstanceVO struct {
 	StandardZoneId           string                   `json:"StandardZoneId" xml:"StandardZoneId"`
 	IoMaxSpec                string                   `json:"IoMaxSpec" xml:"IoMaxSpec"`
 	UpgradeServiceDetailInfo UpgradeServiceDetailInfo `json:"UpgradeServiceDetailInfo" xml:"UpgradeServiceDetailInfo"`
-	Tags                     TagsInGetInstanceList    `json:"Tags" xml:"Tags"`
 }

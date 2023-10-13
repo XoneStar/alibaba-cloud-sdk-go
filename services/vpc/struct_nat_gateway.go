@@ -46,5 +46,4 @@ type NatGateway struct {
 	BandwidthPackageIds       BandwidthPackageIdsInDescribeNatGateways `json:"BandwidthPackageIds" xml:"BandwidthPackageIds"`
 	NatGatewayPrivateInfo     NatGatewayPrivateInfo                    `json:"NatGatewayPrivateInfo" xml:"NatGatewayPrivateInfo"`
 	IpLists                   IpLists                                  `json:"IpLists" xml:"IpLists"`
-	Tags                      TagsInDescribeNatGateways                `json:"Tags" xml:"Tags"`
 }

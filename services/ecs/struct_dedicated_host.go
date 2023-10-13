@@ -49,5 +49,4 @@ type DedicatedHost struct {
 	HostDetailInfo                        HostDetailInfo                                        `json:"HostDetailInfo" xml:"HostDetailInfo"`
 	Instances                             InstancesInDescribeDedicatedHosts                     `json:"Instances" xml:"Instances"`
 	OperationLocks                        OperationLocksInDescribeDedicatedHosts                `json:"OperationLocks" xml:"OperationLocks"`
-	Tags                                  TagsInDescribeDedicatedHosts                          `json:"Tags" xml:"Tags"`
 }
