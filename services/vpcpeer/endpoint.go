@@ -1,6 +1,9 @@
 package vpcpeer
 
+import "sync"
+
 // EndpointMap Endpoint Data
+var once sync.Once
 var EndpointMap map[string]string
 
 // EndpointType regional or central
@@ -8,9 +11,9 @@ var EndpointType = "central"
 
 // GetEndpointMap Get Endpoint Data Map
 func GetEndpointMap() map[string]string {
-	if EndpointMap == nil {
+	once.Do(func() {
 		EndpointMap = map[string]string{}
-	}
+	})
 	return EndpointMap
 }
 
